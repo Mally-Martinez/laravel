@@ -16,10 +16,17 @@
         <input type="text" name= "nombre" >
         <br>
         <label for="correo">Correo:</label>
-        <input type="text" name="CORREO" >
+        <input type="text" name="correo" >
         <br>
         <label for="comentario">Comentario:</label>
-        <textarea name="submit" value= "enviar"></textarea>
+        <textarea name="comentario" value= "enviar"></textarea>
+        <br>
+        <label for="ciudad">ciudad</label>
+        <select name="ciudad" id="">
+            <option value="GDL">Guadalajara</option>
+            <option value="ZAPOPAN">Zapopan</option>
+            <option value="TONALA">Tonala</option>
+        </select>
         <br>
         <input type="submit" value= "enviar">
     </form>

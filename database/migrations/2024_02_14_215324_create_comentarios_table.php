@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('correo');
-            $table->text('contraseña');
+            $table->string('comentario');
             $table->string('ciudad');
             $table->timestamps();
         });
