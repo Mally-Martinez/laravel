@@ -6,7 +6,7 @@
     <title>info</title>
 </head>
 <body>
-    <a href ="/contacto">Contacto</a>
+    <a href ="/comentario/create">Contacto</a>
     <hr>
     <h1>Informacion</h1>
 
