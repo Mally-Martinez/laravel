@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
 </head>
 <body>
-    <a href ="/comentario/create">Contacto</a>
+    <a href="/contacto">Contacto</a>
     <hr>
-    <h1>Informacion</h1>
+    <h1>Información</h1>
+    {{-- $tipo --}}
 
-    {{$tipo}}
-
-    @if($tipo = 'alumno')
+    @if ($tipo == 'alumno')
         <h2>Alumnos</h2>
-        <p>blablabla</p>
-    @elseif($tipo = 'prof' || $tipo = 'profesor')
+        <p>jdjdjd</p>
+    @elseif ($tipo=='prof' || $tipo=='profesor')
         <h2>Profesores</h2>
-        <p>asdfghjfghj</p>
+        <p>adadadad</p>
     @else
         <h2>Publico general</h2>
     @endif
-
+    
 </body>
 </html>

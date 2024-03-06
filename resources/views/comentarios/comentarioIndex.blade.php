@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado comentario</title>
-</head>
-<body>
-    <a href="{{route('comentario.create')}}">Nuevo comentario</a>
-    <h1>Lista de comentarios</h1>
+<x-mi-layout titulo="Listado comentarios">
+    <a class="btn btn-primary" href="{{route('comentario.create')}}">Nuevo comentario</a>
     <table border="1">
         <thead>
             <tr>
@@ -34,10 +25,12 @@
                             @method('DELETE')
                             <input type="submit" value="Eliminar">
                         </form>
+                        
                     </td>
+                    
                 </tr> 
             @endforeach
+            
         </tbody>
     </table>
-</body>
-</html>
+</x-mi-layout>
