@@ -1,6 +1,6 @@
 <x-mi-layout titulo="Listado comentarios">
     <a class="btn btn-primary" href="{{route('comentario.create')}}">Nuevo comentario</a>
-    <table border="1">
+    <table class="table">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -13,8 +13,8 @@
         <tbody>
             @foreach ($comentarios as  $comentario)
                 <tr>
-                    <td>{{$comentario->nombre}}</td>
-                    <td>{{$comentario->correo}}</td>
+                    <td>{{$comentario->user->name}}</td> //nombre
+                    <td>{{$comentario->user->email}}</td> //correo
                     <td>{{$comentario->ciudad}}</td>
                     <td>{{$comentario->created_at}}</td>
                     <td>
